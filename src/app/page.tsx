@@ -1,4 +1,3 @@
-import { Tab } from "@/components/parts/Tab";
 import Link from "next/link";
 
 export default function Home() {
