@@ -51,10 +51,10 @@ export default function Home() {
             Skill
           </h3>
           <ul className="animate-track-in-animation-item list-disc mx-8 flex flex-col gap-y-2">
-            <li>Java</li>
-            <li>JSP</li>
             <li>React</li>
             <li>TypeScript</li>
+            <li>Java</li>
+            <li>JSP</li>
           </ul>
         </div>
       </div>
