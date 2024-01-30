@@ -1,4 +1,4 @@
-import { PostList } from "@/components/parts/PostList";
+import { PostCard } from "@/components/parts/PostCard";
 import { client } from "@/lib/client";
 import { BlogType } from "@/types/blog";
 
@@ -17,7 +17,11 @@ export default async function Home() {
       {data.contents.length === 0 ? (
         <p className="font-bold text-gray-200">データがありません</p>
       ) : (
-        <PostList data={data.contents} />
+        <div className="my-4 grid animate-track-in-animation-item grid-cols-1 gap-1 md:my-8 md:grid-cols-2 xl:grid-cols-3 ">
+          {data.contents.map((content) => {
+            return <PostCard key={content.id} content={content} />;
+          })}
+        </div>
       )}
     </div>
   );
