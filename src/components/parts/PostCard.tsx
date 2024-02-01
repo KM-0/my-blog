@@ -13,7 +13,6 @@ export const PostCard = ({ content }: Props) => {
         href={`/blog/detail/${content.id}`}
         className="absolute inset-0"
       />
-
       <div className="flex h-3/5 w-full flex-col items-center justify-center bg-green-200 p-3">
         <h3 className="block p-2 text-3xl">{content.icon}</h3>
         <p className="block font-bold">{content.title}</p>
